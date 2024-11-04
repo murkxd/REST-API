@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Blog API</h1>
+        </header>
+
+        <section id="auth-section">
+            <div id="login-form" class="auth-form active-form">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <p>Switch to <span onclick="toggleForms()">Register</span></p>
+            </div>
+
+            <div id="register-form" class="auth-form">
+                <h2>Register</h2>
+                <input type="text" id="reg-username" placeholder="Username">
+                <input type="password" id="reg-password" placeholder="Password">
+                <button onclick="register()">Register</button>
+                <p>Switch to <span onclick="toggleForms()">Login</span></p>
+            </div>
+        </section>
+
+        <section id="posts-section" style="display: none;">
+            <button onclick="logout()" id="logout-button">Logout</button>
+            <div id="posts-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
