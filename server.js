@@ -194,5 +194,5 @@ app.get("/api/about", (req, res) => {
 });
 
 app.listen(3050, "0.0.0.0", () => {
-  console.log("Website and API are running on http://localhost:3050");
+  console.log("Website and API are running on http://3.88.2.83:3050");
 });
