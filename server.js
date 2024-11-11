@@ -16,7 +16,7 @@ const JWT_SECRET = "0Wg11ndyhI+WpHVYSCT6jxrcC2OPabIcMf/4A8Ip7ug=";
 
 const db = mysql.createConnection({
   host: "3.88.2.83:3050",
-  user: "root",
+  user: "mysql",
   password: "",
   database: "wa_api",
 });
